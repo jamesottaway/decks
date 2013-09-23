@@ -1,0 +1,6 @@
+source :rubygems
+
+gem 'showoff'
+
+gem 'heroku', :group => :development
+gem 'cardigan', :group => :development

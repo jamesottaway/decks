@@ -1,0 +1,11 @@
+{
+	"name": "Provisioning Dev PCs with Babushka",
+	"sections": [
+		{"section":"title"},
+		{"section":"what"},
+		{"section":"why"},
+		{"section":"how"},
+		{"section":"me"},
+		{"section":"fin"}
+	]
+}

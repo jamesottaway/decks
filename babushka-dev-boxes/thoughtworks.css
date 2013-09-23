@@ -1,0 +1,12 @@
+.slide {
+	background-color: #000000;
+	color: #FFFFFF;
+	background-image: url(thoughtworks.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+pre.sh_sourceCode {
+	background-color: #000000;
+	color: #FFFFFF;
+}
