@@ -1,0 +1,91 @@
+- my story
+  - wrote procedural code
+  - learnt c# and scheme at the same time
+  - object oriented felt easier
+  - jumped on the ruby train, and started to tnker with FP
+  - realised later the power of functional programming
+- elevator pitch
+  - avoid complexity
+  - be more expressive
+- teaser examples
+  - (take 25 (squares-of (integers)))
+  - [1,2,3,4].map(&:to_i).reduce(&:+)
+  - [1,2,3,4,5].filter(function(i) { return i % 2 == 0; });
+- history
+  - lambda calculus
+    - attempted to define functions, including their application
+    - Alonzo Church, 1930s
+  - declarative programming 
+    - programming paradigm
+    - expresses computation logic without describing control flow
+    - sub-paradigms
+      - regular expressions
+      - reactive programming (excel)
+        - a = b + c
+        - if b or c change, a "reacts"
+        - see `code-samples/reactive-programming`
+- functional programming
+  - definition
+    - programming paradigm
+    - treats computation as the evaluation of mathematical functions
+    - avoids state and mutable data
+    - define what, not how!
+  - languages
+    - lisp, haskell, erlang, clojure
+    - javascript, ruby, scala, f#
+    - c#, java, powershell
+  - concepts
+    - functions
+      - first class
+      - higher order
+        - functions that can either take other functions as arguments or return them as results
+    - closures
+      - a function or reference to a function together with a referencing environment
+    - purity (no side effects)
+      - "insanity is doing the same thing over and over again and expecting different results" - Albert Einstein
+      - referential transparency (idempotency)
+        - can transparently replace function call with its result
+        - must return same result given identical input to be eligible
+        - see `code-samples/referential-transparency`
+      - memoisation
+        - avoid repeating the calculation of results for previously processed inputs
+        - caches the result of a function call, along with any arguments, in a lookup table
+        - done by the compiler/framework
+        - allows parallelisation, huge win!
+      - deforestation
+        - remove "tree" structures
+        - gives the compiler freedom to reorder or combine the evaluation of expressions in a program
+        - allows parallelisation
+      - reality
+        - state is inevitable
+        - keep state contained so other functions can be pure
+    - recursion over iteration
+      - leverages the call stack for managing "state"
+      - allows the compiler to work its magic
+    - structure and interpretation of computer programs
+      - seminal book on computer programming
+      - first published in 1984
+      - available free, online
+      - manages to avoid introducing variables (and hence state) for half the book
+- real world examples
+  - list comprehension
+    - can be imperative
+    - looks much nicer done functionally
+  - mobile app frameworks
+    - you define how you will respond to system hooks/callbacks
+    - operating systems controls the application flow
+    - delegates to your hooks/callbacks when necessary
+    - ![app lifecycle model](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Art/high_level_flow_2x.png)
+  - [programming with nothing](http://codon.com/programming-with-nothing)
+    - implements fizzbuzz using nothing but ruby procs
+    - builds integers, if-statements, bool logic, etc. on top of procs
+  - reactive extensions
+    - observable/observer (async data streams) rather than enumerable/enumerator
+    - ![reactive manifesto](http://www.reactivemanifesto.org/images/full-reactive@2x.png)
+  - github desktop clients
+    - build with reactive extensions
+    - github implemented the reactive extensions pattern in objective-c
+    - see [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)
+- fin
+  - go forth and prosper
+  - check out my references
